@@ -1,0 +1,11 @@
+.header{
+    @apply mx-2;
+    .container{
+        @apply  mx-auto max-w-[1440px] py-[10px] flex justify-between items-end;
+        .logo{
+            h1{
+                @apply text-[40px] font-[900];
+            }
+        }
+    }
+}

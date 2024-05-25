@@ -1,0 +1,24 @@
+.card{
+    @apply border-solid border-[2px] border-black rounded-[20px] p-[20px];
+    .top{
+        @apply flex items-center  mb-[20px];
+        h3{
+            @apply flex-[70%] text-[24px] font-[700];
+        }
+    }
+
+    h5{
+        @apply text-[15px] font-[400] bg-slate-400 rounded-[10px] px-5 py-1 inline-block;
+    }
+    .btn{
+        @apply flex justify-end;
+        a{
+            @apply border-solid border-2 rounded-lg px-[10px] py-[5px] transition-all duration-300;
+
+            &:hover{
+                @apply border-green-600;
+            }
+        }
+            
+    }
+}

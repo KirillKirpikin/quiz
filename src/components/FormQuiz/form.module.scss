@@ -1,0 +1,66 @@
+.section{
+    @apply mx-2;
+
+    .container{
+        @apply mx-auto max-w-[700px];
+    }
+
+    .form{
+        .question{
+            @apply border-solid border-[2px] border-black rounded-lg p-[15px];
+            .delete{
+                @apply flex justify-end my-[10px];
+                button{
+                    @apply  border-solid border-[2px] border-black px-[15px] py-[7px] rounded-lg;
+                }
+            }
+            .btns{
+                @apply flex justify-between my-[10px];
+                button{
+                    @apply  border-solid border-[2px] border-black px-[15px] py-[7px] rounded-lg;
+                }
+            }
+        }
+        .input{
+            @apply w-full relative;
+            input{
+                @apply w-full bg-[#EBF1FB] mb-[30px] py-[15px] text-[20px] pl-[20px] md:pl-[30px] rounded-[10px] font-normal text-[#404040];
+    
+                &::placeholder{
+                    @apply font-normal text-[#B1B1B1] text-[20px] md:text-[33px];
+                }              
+            }
+           
+        }
+        .answer{
+            @apply flex items-center;
+            .check{
+                
+                label{
+                    @apply mx-[15px] flex flex-col items-center justify-center;
+                }
+                input{
+                    @apply mb-0
+                }
+            }
+        }
+        .btn{ 
+            @apply flex flex-col mb-[20px];
+            button{
+              @apply  border-solid border-[2px] border-black px-[15px] py-[7px] rounded-lg;
+            }
+        }
+
+        .add{ 
+            @apply flex flex-col mb-[20px];
+            button{
+              @apply  border-solid border-[2px] border-green-500 px-[15px] py-[7px] rounded-lg;
+            }
+        }
+
+    }
+
+
+
+
+}

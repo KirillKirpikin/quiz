@@ -1,0 +1,27 @@
+.section{
+    @apply mx-2;
+    .container{
+        @apply mx-auto max-w-[1440px];
+        h2{
+            @apply text-center text-[27px] font-[600] mb-[25px];
+        }
+    }
+    .search{
+        @apply border-solid border-[2px] border-black rounded-lg w-full px-[20px] py-[10px] mb-[20px];
+    }
+    .list{
+        @apply flex flex-wrap mx-[-20px];
+        .card{
+            @apply w-1/3 p-[20px]  h-auto;
+            .btn_add{
+                @apply border-solid border-[2px] border-black flex w-full rounded-[20px] h-full justify-center items-center;
+                .add{
+                    @apply text-[70px] px-[40px] transition-all duration-300;
+                    &:hover{
+                        @apply text-green-500;
+                    }
+                }
+            }
+        }
+    }
+}

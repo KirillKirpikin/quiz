@@ -1,0 +1,47 @@
+.section{
+    @apply mx-2;
+    .container{
+        @apply mx-auto max-w-[1440px];
+    }
+    .block{
+        @apply mx-auto max-w-[700px] border-solid border-[1px] border-black rounded-[20px] p-[20px] ;
+        h1{
+            @apply text-[30px] mb-[10px];
+        }
+        h2{
+            @apply text-[25px] mb-[10px]
+        }
+        h4{
+            @apply text-[22px] mb-[10px]
+        }
+        .answer{
+            @apply my-[10px] cursor-pointer px-[10px] py-[5px] rounded-lg border-solid border-[1px] border-black transition-all duration-300;
+
+            &:hover{
+                @apply bg-blue-400
+            }
+        }
+        
+        .answer_active{
+            @apply bg-blue-400;
+        }
+
+        .btns{
+            @apply flex justify-between mt-[20px];
+            button{
+                @apply  border-solid border-[1px] border-black px-[15px] py-[5px] rounded-lg transition-all duration-300;
+                &:disabled{
+                    @apply bg-gray-500 opacity-30 cursor-not-allowed;
+                }
+                &:hover{
+                    @apply bg-green-500
+                }
+            }
+
+        }
+
+    }
+    
+
+
+}
